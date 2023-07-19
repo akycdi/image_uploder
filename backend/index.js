@@ -17,8 +17,9 @@ app.use(cors())
 app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: false }))
 
-app.use('/file', require("./routes/file.routes"))
-app.use('/user', require("./routes/user.routes"))
+
+
+
 
 app.listen(3000, () => { console.log("listing on port 3000") });
 module.exports = db
